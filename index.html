@@ -21,44 +21,44 @@
   </head>
   <body>
     <!-- Header Awal -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="absolute top-0 left-0 z-10 flex items-center w-full bg-transparent">
       <div class="container">
-        <div class="flex items-center justify-between relative">
+        <div class="relative flex items-center justify-between">
           <div class="px-4">
-            <h1 class="font-bold text-lg dark:text-white block py-6">MuhammadMa<span class="text-primary">thori</span></h1>
+            <h1 class="block py-6 text-lg font-bold dark:text-white">MuhammadMa<span class="text-primary">thori</span></h1>
           </div>
           <div class="flex items-center px-4">
-            <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
-              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+              <span class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
+              <span class="transition duration-300 ease-in-out hamburger-line"></span>
+              <span class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"></span>
             </button>
             <nav
               id="nav-menu"
               class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent">
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#Home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
+                  <a href="#Home" class="flex py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white">Home</a>
                 </li>
                 <li class="group">
-                  <a href="#About" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang Saya</a>
+                  <a href="#About" class="flex py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white">About me</a>
                 </li>
                 <li class="group">
-                  <a href="#Skill" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Skill</a>
+                  <a href="#Skill" class="flex py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white">Skill</a>
                 </li>
                 <li class="group">
-                  <a href="#Portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
+                  <a href="#Portfolio" class="flex py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white">Portfolio</a>
                 </li>
                 <li class="group">
-                  <a href="#Contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
+                  <a href="#Contact" class="flex py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white">Contact</a>
                 </li>
-                <li class="flex items-center pl-8 py-2">
+                <li class="flex items-center py-2 pl-8">
                   <div class="flex">
                     <span class="mr-2 text-sm text-slate-500">Light</span>
                     <input type="checkbox" class="hidden" id="dark-toggle" />
                     <label for="dark-toggle">
-                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      <div class="flex items-center h-5 p-1 rounded-full cursor-pointer w-9 bg-slate-500">
+                        <div class="w-4 h-4 transition duration-300 ease-in-out bg-white rounded-full toggle-circle"></div>
                       </div>
                     </label>
                     <span class="ml-2 text-sm text-slate-500">Dark</span>
@@ -76,20 +76,20 @@
     <section id="Home" class="pt-36 bg-slate-100 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl" data-aos="fade-down" data-aos-duration="1000">Hallo Semua 👋 Saya</h1>
-            <h1 class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white" data-aos="fade-right" data-aos-duration="1000">
+          <div class="self-center w-full px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl" data-aos="fade-down" data-aos-duration="1000">Hello Everyone 👋 I'm</h1>
+            <h1 class="block mt-1 text-4xl font-bold text-dark lg:text-5xl dark:text-white" data-aos="fade-right" data-aos-duration="1000">
               Muhammad Ma<span class="text-primary">thori</span> Abdul Jalil
             </h1>
-            <h2 class="lead font-medium text-secondary text-lg mb-5 lg:text-2xl"></h2>
+            <h2 class="mb-5 text-lg font-medium lead text-secondary lg:text-2xl"></h2>
             <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000">
-              <a href="#Contact" class="z-15 text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 duration-300 ease-in-out">Hubungi Saya</a>
+              <a href="#Contact" class="px-8 py-3 text-base font-semibold text-white duration-300 ease-in-out rounded-full z-15 bg-primary hover:shadow-lg hover:opacity-80">Contact Me</a>
             </div>
           </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
+          <div class="self-end w-full px-4 lg:w-1/2">
             <div class="relative mt-10 lg:right-0 lg:mt-9">
-              <img src="dist/img/PP-thori2-removebg-preview.png" alt="Sandhika Galih" class="relative z-10 mx-auto max-w-full" />
-              <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+              <img src="dist/img/PP-thori2-removebg-preview.png" alt="Sandhika Galih" class="relative z-10 max-w-full mx-auto" />
+              <span class="absolute bottom-0 -translate-x-1/2 left-1/2 md:scale-125">
                 <svg width="350" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="#14b8a6"
@@ -105,35 +105,36 @@
     <!-- Hero Section Akhir -->
 
     <!-- Abaut Section Awal -->
-    <section id="About" class="pt-36 pb-32 dark:bg-dark">
+    <section id="About" class="pb-32 pt-36 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-fulll px-4 mb-10 lg:w-1/2">
+          <div class="px-4 mb-10 w-fulll lg:w-1/2">
             <div data-aos="fade-down" data-aos-duration="1000">
-              <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
+              <h4 class="mb-3 text-lg font-bold uppercase text-primary">About Me</h4>
             </div>
             <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
-              <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
-                Hallo saya adalah seorang Fresh Graduate dalam bidang Teknik Informatika dari Universitas Muhammadiyah Gresik. Perjalanan saya sebagai mahasiswa telah menjadi pengalaman yang luar
-                biasa selama empat tahun dari tahun 2017-2021 dan telah membekali saya dengan pondasi kuat di dunia teknologi.
+              <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">
+                Hello, I'm a recent graduate in Informatics Engineering from Muhammadiyah University of Gresik. My four-year student journey, from 2017 to 2021, has been an incredible experience,
+                providing me with a strong foundation in the world of technology.
               </p>
-              <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
-                Selama masa studi di Universitas Muhammadiyah Gresik, saya fokus belajar dan mengeksplorasi berbagai aspek ilmu komputer, dengan penekanan khusus pada pengembangan perangkat lunak dan
-                sistem informasi. Melalui mata kuliah, KKN, dan magang. Saya mengembangkan minat kuat untuk memecahkan masalah dunia nyata dengan menggunakan teknologi inovatif dan terkini.
+              <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">
+                During my studies at Muhammadiyah University of Gresik, I focused on studying and exploring various aspects of computer science, with a particular emphasis on software development and
+                information systems. Through courses, community service programs, and internships, I developed a strong interest in solving real-world problems using innovative and cutting-edge
+                technologies.
               </p>
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900">
-            <h3 class="font-semibold text-dark text-2xl mb-4 lg:pt-10 dark:text-white">Mari Berteman</h3>
-            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
-              Hallo mari kita berteman, yuk kita jaga komunikasi kita tetap hangat di dunia digital! Temukan saya di Instagram, Twitter, dan LinkedIn.
+            <h3 class="mb-4 text-2xl font-semibold text-dark lg:pt-10 dark:text-white">Let's be friends</h3>
+            <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
+              Hey, let's be friends! Let's keep our communication alive in the digital world! Find me on Instagram, Twitter, LinkedIn and GitHub.
             </p>
             <div class="flex items-center">
               <!-- Instagram -->
               <a
                 href="https://instagram.com/mmathori__"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-white">
+                class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-white">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Instagram</title>
                   <path
@@ -142,9 +143,9 @@
               </a>
               <!-- Twitter -->
               <a
-                href="https://twitter.com/mthor99"
+                href="https://x.com/mmathori__"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-white">
+                class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-white">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>X</title>
                   <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
@@ -154,11 +155,22 @@
               <a
                 href="https://www.linkedin.com/in/muhammad-mathori-abdul-jalil-551597282/"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-white">
+                class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-white">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>LinkedIn</title>
                   <path
                     d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+              <!-- Github -->
+              <a
+                href="https://github.com/MuhammadMathori"
+                target="_blank"
+                class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-white">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
                 </svg>
               </a>
             </div>
@@ -169,12 +181,12 @@
     <!-- Abaut Section Akhir -->
 
     <!-- Skill Section Awal -->
-    <!-- <section id="skill" class="pt-36 pb-16 bg-slate-100 dark:bg-dark">
+    <!-- <section id="skill" class="pb-16 pt-36 bg-slate-100 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16" data-aos="fade-down" data-aos-duration="1000">
-            <h4 class="font-semibold text-lg text-primary md-2">Skill</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">My Skill</h2>
+          <div class="max-w-xl mx-auto mb-16 text-center" data-aos="fade-down" data-aos-duration="1000">
+            <h4 class="text-lg font-semibold text-primary md-2">Skill</h4>
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white">My Skill</h2>
             <p class="font-medium text-md text-secondary">Berikut adalah skill yang pernah saya pelajari</p>
           </div>
         </div>
@@ -189,14 +201,14 @@
       </div>
     </section> -->
 
-    <section id="Skill" class="bg-slate-100 pt-36 pb-32 dark:bg-dark">
+    <section id="Skill" class="pb-32 bg-slate-100 pt-36 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center">
             <div data-aos="fade-down" data-aos-duration="1000">
               <h4 class="mb-2 text-lg font-semibold text-primary">Skill</h4>
               <h2 class="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl lg:text-5xl">My Skill</h2>
-              <p class="text-md font-medium text-secondary md:text-lg">Berikut adalah skill yang pernah saya pelajari</p>
+              <p class="font-medium text-md text-secondary md:text-lg">The following are the skills that I have mastered</p>
             </div>
           </div>
         </div>
@@ -221,6 +233,15 @@
             <a href="https://laravel.com/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
               <img src="dist/img/skill/laravel-logo-41EC1D4C3F-seeklogo.com.png" alt="Laravel" />
             </a>
+            <a href="https://tailwindcss.com/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skill/tailwind.png" alt="Tailwind" />
+            </a>
+            <a href="https://react.dev/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skill/react.png" alt="reactjs" />
+            </a>
+            <a href="https://nextjs.org/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skill/nextjs.jpg" alt="nextjs" />
+            </a>
           </div>
         </div>
       </div>
@@ -229,61 +250,69 @@
     <!-- Skill Section Akhir -->
 
     <!-- Portfolio Section Awal -->
-    <section id="Portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-dark">
+    <section id="Portfolio" class="pb-16 pt-36 bg-slate-100 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16" data-aos="fade-down" data-aos-duration="1000">
-            <h4 class="font-semibold text-lg text-primary md-2">Portfolio</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">My Project</h2>
-            <p class="font-medium text-md text-secondary">Berikut adalah sebuah project yang pernah saya buat</p>
+          <div class="max-w-xl mx-auto mb-16 text-center" data-aos="fade-down" data-aos-duration="1000">
+            <h4 class="text-lg font-semibold text-primary md-2">Portfolio</h4>
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white">My Project</h2>
+            <p class="font-medium text-md text-secondary">The following is a project that I have made</p>
           </div>
         </div>
-        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-down" data-aos-duration="1000">
+        <div class="flex flex-wrap justify-center w-full px-4 xl:w-10/12 xl:mx-auto">
+          <div class="p-4 mb-12 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md" data-aos="flip-down" data-aos-duration="1000">
+              <a href="https://front-and.vercel.app/">
+                <img src="dist/img/Portfolio/event.png" class="transition duration-500 hover:opacity-80 hover:shadow-lg" alt="Sistem Prediksi Penjualan" width="w-full" />
+              </a>
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-center text-dark dark:text-white" data-aos="fade-up" data-aos-duration="1000">System Pengelola Ticket Event</h3>
+          </div>
+          <div class="p-4 mb-12 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md" data-aos="flip-down" data-aos-duration="1000">
               <a href="https://github.com/MuhammadMathori/perpustakaan">
-                <img src="dist/img/Portfolio/sirebu.png" class="hover:opacity-80 hover:shadow-lg transition duration-500" alt="Sistem Prediksi Penjualan" width="w-full" />
+                <img src="dist/img/Portfolio/sirebu.png" class="transition duration-500 hover:opacity-80 hover:shadow-lg" alt="Sistem Prediksi Penjualan" width="w-full" />
               </a>
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white" data-aos="fade-up" data-aos-duration="1000">System Rental Buku</h3>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-center text-dark dark:text-white" data-aos="fade-up" data-aos-duration="1000">System Rental Buku</h3>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100">
+          <div class="p-4 mb-12 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100">
               <a href="https://github.com/MuhammadMathori/sistemprediksi">
-                <img src="dist/img/Portfolio/home.png" class="hover:opacity-80 hover:shadow-lg transition duration-500" alt="Sistem Prediksi Penjualan" width="w-full" />
+                <img src="dist/img/Portfolio/home.png" class="transition duration-500 hover:opacity-80 hover:shadow-lg" alt="Sistem Prediksi Penjualan" width="w-full" />
               </a>
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white" data-aos="fade-up" data-aos-duration="1000">System Prediksi Penjualan</h3>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-center text-dark dark:text-white" data-aos="fade-up" data-aos-duration="1000">System Prediksi Penjualan</h3>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100">
+          <div class="p-4 mb-12 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100">
               <a href="https://muhammadmathori.github.io/">
-                <img src="dist/img/Portfolio/landing.png" class="hover:opacity-80 hover:shadow-lg transition duration-500" alt="Landing Page" width="w-full" />
+                <img src="dist/img/Portfolio/landing.png" class="transition duration-500 hover:opacity-80 hover:shadow-lg" alt="Landing Page" width="w-full" />
               </a>
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Landing Page</h3>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-center text-dark dark:text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Landing Page</h3>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
-              <img src="dist/img/Portfolio/Project-6.png" class="hover:opacity-80 hover:shadow-lg transition duration-500" alt="System Absensi" width="w-full" />
+          <div class="p-4 mb-12 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
+              <img src="dist/img/Portfolio/Project-6.png" class="transition duration-500 hover:opacity-80 hover:shadow-lg" alt="System Absensi" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">System Absensi</h3>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-center text-dark dark:text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">System Absensi</h3>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
+          <div class="p-4 mb-12 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
               <a href="https://muhammadmathori.github.io/wedding/">
-                <img src="dist/img/Portfolio/wedding.png" class="hover:opacity-80 hover:shadow-lg transition duration-500" alt="wedding" width="w-full" />
+                <img src="dist/img/Portfolio/wedding.png" class="transition duration-500 hover:opacity-80 hover:shadow-lg" alt="wedding" width="w-full" />
               </a>
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Wedding Invitation</h3>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-center text-dark dark:text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Wedding Invitation</h3>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
+          <div class="p-4 mb-12 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
               <a href="https://github.com/MuhammadMathori/teafamily">
-                <img src="dist/img/Portfolio/e-commerce.png" class="hover:opacity-80 hover:shadow-lg transition duration-500" alt="e-commerce" width="w-full" />
+                <img src="dist/img/Portfolio/e-commerce.png" class="transition duration-500 hover:opacity-80 hover:shadow-lg" alt="e-commerce" width="w-full" />
               </a>
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">E-Commerce</h3>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-center text-dark dark:text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">E-Commerce</h3>
           </div>
         </div>
       </div>
@@ -337,35 +366,35 @@
     <!-- Portfolio Section Akhir -->
 
     <!-- Contact Section Awal -->
-    <section id="Contact" class="pt-36 pb-32 dark:bg-dark">
+    <section id="Contact" class="pb-32 pt-36 dark:bg-dark">
       <form id="Contact-Form" action="https://formspree.io/f/maygqree" method="POST">
         <div class="container">
           <div class="w-full px-4">
-            <div class="max-w-xl mx-auto text-center mb-16" data-aos="fade-down" data-aos-duration="1000">
-              <h4 class="font-semibold text-lg text-primary md-2">Contact</h4>
-              <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">Hubungi Saya</h2>
+            <div class="max-w-xl mx-auto mb-16 text-center" data-aos="fade-down" data-aos-duration="1000">
+              <h4 class="text-lg font-semibold text-primary md-2">Contact</h4>
+              <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white">Contact Me</h2>
             </div>
           </div>
           <form>
             <div class="w-full lg:w-2/3 lg:mx-auto" data-aos="zoom-in-down" data-aos-duration="1000">
               <div class="w-full px-4 mb-8">
-                <label for="name" class="text-base font-bold text-primary">Nama Lengkap</label>
-                <input type="text" id="name" name="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+                <label for="name" class="text-base font-bold text-primary">Fullname</label>
+                <input type="text" id="name" name="name" class="w-full p-3 rounded-md bg-slate-200 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
               </div>
               <div class="w-full px-4 mb-8">
                 <label for="emial" class="text-base font-bold text-primary">Email</label>
-                <input type="email" id="email" name="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+                <input type="email" id="email" name="email" class="w-full p-3 rounded-md bg-slate-200 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
               </div>
               <div class="w-full px-4 mb-8">
-                <label for="pesan" class="text-base font-bold text-primary">Pesan</label>
+                <label for="pesan" class="text-base font-bold text-primary">Message</label>
                 <textarea
                   type="pesan"
                   id="pesan"
                   name="message"
-                  class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-40"></textarea>
+                  class="w-full h-40 p-3 rounded-md bg-slate-200 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"></textarea>
               </div>
               <div class="w-full px-4">
-                <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                <button class="w-full px-8 py-3 text-base font-semibold text-white transition duration-500 rounded-full bg-primary hover:opacity-80 hover:shadow-lg">Send</button>
               </div>
             </div>
           </form>
@@ -375,46 +404,46 @@
     <!-- Contact Section Akhir -->
 
     <!-- Footer Awal -->
-    <footer class="bg-dark pt-24 pb-12">
+    <footer class="pt-24 pb-12 bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-5 mb-12 text-slate-300 font-medium md:w-1/3">
-            <h3 class="font-bold text-2xl mb-5">Hubungi Saya</h3>
+          <div class="w-full px-5 mb-12 font-medium text-slate-300 md:w-1/3">
+            <h3 class="mb-5 text-2xl font-bold">Contact Me</h3>
             <p class="text-sm lg:text-lg">mathorimuhammad449@gmail.com</p>
             <p>Jl Sunan Giri Gg Beringin Jaya</p>
             <p>No 10A Lamongan</p>
           </div>
-          <div class="w-full px-5 mb-12 text-slate-300 font-medium md:w-1/3">
-            <h3 class="font-bold text-xl mb-5">Skill</h3>
+          <div class="w-full px-5 mb-12 font-medium text-slate-300 md:w-1/3">
+            <h3 class="mb-5 text-xl font-bold">Skill</h3>
             <p>HTML & CSS</p>
             <p>Java Script</p>
             <p>Bootstrap</p>
             <p>MySQL</p>
             <p>PHP Laravel</p>
           </div>
-          <div class="w-full px-5 mb-12 text-slate-300 font-medium md:w-1/3">
-            <h3 class="font-semibold text-xl mb-5">Tautan</h3>
+          <div class="w-full px-5 mb-12 font-medium text-slate-300 md:w-1/3">
+            <h3 class="mb-5 text-xl font-semibold">Link</h3>
             <ul class="text-white">
               <li>
-                <a href="#Home" class="inline-block text-base hover:text-primary mb-3">Home</a>
+                <a href="#Home" class="inline-block mb-3 text-base hover:text-primary">Home</a>
               </li>
             </ul>
             <ul class="text-white">
               <li>
-                <a href="#About" class="inline-block text-base hover:text-primary mb-3">Tentang Saya</a>
+                <a href="#About" class="inline-block mb-3 text-base hover:text-primary">About me</a>
               </li>
             </ul>
             <ul class="text-white">
               <li>
-                <a href="#Skill" class="inline-block text-base hover:text-primary mb-3">Skill</a>
+                <a href="#Skill" class="inline-block mb-3 text-base hover:text-primary">Skill</a>
               </li>
               <li>
-                <a href="#Portfolio" class="inline-block text-base hover:text-primary mb-3">Portfolio</a>
+                <a href="#Portfolio" class="inline-block mb-3 text-base hover:text-primary">Portfolio</a>
               </li>
             </ul>
             <ul class="text-white">
               <li>
-                <a href="#Contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
+                <a href="#Contact" class="inline-block mb-3 text-base hover:text-primary">Contact</a>
               </li>
             </ul>
           </div>
@@ -425,7 +454,7 @@
             <a
               href="https://instagram.com/mmathori__"
               target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center broder border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-white">
+              class="flex items-center justify-center mr-3 text-white rounded-full w-9 h-9 broder border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Instagram</title>
                 <path
@@ -436,7 +465,7 @@
             <a
               href="https://twitter.com/mthor99"
               target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center broder border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-white">
+              class="flex items-center justify-center mr-3 text-white rounded-full w-9 h-9 broder border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>X</title>
                 <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
@@ -446,15 +475,25 @@
             <a
               href="https://www.linkedin.com/in/muhammad-mathori-abdul-jalil-551597282/"
               target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center broder border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-white">
+              class="flex items-center justify-center mr-3 text-white rounded-full w-9 h-9 broder border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>LinkedIn</title>
                 <path
                   d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
               </svg>
             </a>
+            <a
+              href="https://github.com/MuhammadMathori"
+              target="_blank"
+              class="flex items-center justify-center mr-3 text-white rounded-full w-9 h-9 broder border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+            </a>
           </div>
-          <p class="font-medium text-sm text-slate-500 text-center">Dibuat Oleh Muhammad Mathori Abdul Jalil</p>
+          <p class="text-sm font-medium text-center text-slate-500">By Muhammad Mathori Abdul Jalil</p>
         </div>
       </div>
     </footer>
@@ -462,7 +501,7 @@
 
     <!-- Kembali ke Atas Awal -->
     <a href="#Home" class="fixed bottom-4 right-4 z-[9999] hidden h-12 w-12 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
-      <span class="mt-2 block h-4 w-4 rotate-45 border-t-2 border-l-2"></span>
+      <span class="block w-4 h-4 mt-2 rotate-45 border-t-2 border-l-2"></span>
     </a>
     <!-- Kembali ke Atas Akhir -->
 

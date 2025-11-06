@@ -735,7 +735,7 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
-  font-family: Inter, sans-serif;
+  font-family: "Allerta Stencil";
 }
 .navbar-fixed {
   position: fixed;
@@ -781,6 +781,10 @@ body {
 }
 .hamburger-active > span:nth-child(3) {
   --tw-rotate: -45deg;
+}
+
+.button-container .btn-portfolio:not(:last-child) {
+  margin-right: 0.8rem;
 }
 #dark-toggle:checked ~ label div.toggle-circle,
 .hamburger-active > span:nth-child(3) {

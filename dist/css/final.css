@@ -786,6 +786,24 @@ body {
 .button-container .btn-portfolio:not(:last-child) {
   margin-right: 0.8rem;
 }
+
+.button-container a {
+  transition: background-color 0.3s ease-in-out;
+}
+.button-container a:hover {
+  background-color: #1b584d;
+}
+
+.img-portfolio {
+  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.632); /* Tambahkan shadow */
+  border-radius: 8px; /* Opsional: Membuat sudut gambar melengkung */
+  transition: box-shadow 0.3s ease; /* Efek transisi saat hover */
+}
+
+.img-portfolio:hover {
+  box-shadow: 0 8px 15px #4ac7c733; /* Shadow lebih besar saat hover */
+}
+
 #dark-toggle:checked ~ label div.toggle-circle,
 .hamburger-active > span:nth-child(3) {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
